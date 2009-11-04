@@ -1,0 +1,7 @@
+h1. Folio
+
+A simple portfolio management tool built in ruby on rails.
+
+h2. More info to come later
+
+Cool. Real cool.
