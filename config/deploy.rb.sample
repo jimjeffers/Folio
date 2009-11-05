@@ -1,0 +1,37 @@
+set :keep_releases,       5
+set :application,         "jimjeffers.com"
+set :user,                "<USERNAME>"
+set :password,            "<PASSWORD>"
+set :deploy_to,           "/data/apps/#{application}"
+set :runner,              "folio"
+set :repository,          "git://github.com/jimjeffers/Folio.git"
+set :scm,                 "git"
+set :branch,              "master"
+set :deploy_via,          :remote_cache
+set :port,                <PORT>
+
+role :app, "204.232.193.107"
+role :web, "204.232.193.107"
+role :db, "204.232.193.107" , :primary => true
+
+desc "Link shared files"
+task :before_symlink do
+run "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+run "rm -rf #{release_path}/log/"
+run "ln -nfs #{shared_path}/log #{release_path}/log"
+run "rm -rf #{release_path}/tmp/"
+run "ln -nfs #{shared_path}/tmp #{release_path}/tmp"
+run "rm -rf #{release_path}/public/system/"
+run "ln -nfs #{shared_path}/public/system #{release_path}/public/system"
+end
+
+
+[:start, :restart, :stop].each do |action|
+  desc "Restarts passenger."
+  deploy.task action do
+    sudo "touch #{shared_path}/tmp/restart.txt"
+  end
+end
+
+after "deploy", "deploy:cleanup"
+after "deploy:migrations" , "deploy:cleanup"
