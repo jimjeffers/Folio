@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title><%= (@page && !@page.title.blank?) ? @page.title : @home_page.title %></title>
+    <meta name="keywords" content="<%= (@page && !@page.keywords.blank?) ? @page.keywords : @home_page.keywords %>">
+    <meta name="description" content="<%= (@page && !@page.description.blank?) ? @page.description : @home_page.description %>">
+  </head>
+  <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
+    <header>
+      <h1 id="portfolio_owner_name">
+        <span class="first_name">Jim</span> 
+        <span id="last_name">Jeffers</span>
+      </h1>
+    </header>
+    <nav>
+      <a href="/">About</a>
+      <a href="/">Work</a>
+      <a href="/">Publications</a>
+      <a href="/">Inquire</a>
+    </nav>
+    <section id="about">
+      
+    </section>
+    <section id="work">
+      
+    </section>
+    <footer>
+      <nav>
+        <h2>About</h2>
+        <a href="/">About Us</a>
+      </nav>
+    </footer>
+  </body>
+</html>
