@@ -2,16 +2,17 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title><%= (@page && !@page.title.blank?) ? @page.title : @home_page.title %></title>
-    <meta name="keywords" content="<%= (@page && !@page.keywords.blank?) ? @page.keywords : @home_page.keywords %>">
-    <meta name="description" content="<%= (@page && !@page.description.blank?) ? @page.description : @home_page.description %>">
+    <title><%= controller.controller_name %></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/stylesheets/folio.css" type="text/css" media="screen" charset="utf-8">
+    <script type="text/javascript" src="http://use.typekit.com/gni4okt.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
     <header>
-      <h1 id="portfolio_owner_name">
-        <span class="first_name">Jim</span> 
-        <span id="last_name">Jeffers</span>
-      </h1>
+      <h1 id="portfolio_owner_name">Hello my name is <span class="first_name">Jim</span><span class="punctuation">.</span></h1>
     </header>
     <nav>
       <a href="/">About</a>
@@ -23,7 +24,7 @@
       
     </section>
     <section id="work">
-      
+      <%= yield :layout %>
     </section>
     <footer>
       <nav>
