@@ -9,21 +9,22 @@
     <link rel="stylesheet" href="/stylesheets/folio.css" type="text/css" media="screen" charset="utf-8">
     <script type="text/javascript" src="http://use.typekit.com/gni4okt.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="/javascripts/modernizr.js"></script>
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
     <header>
-      <h1 id="portfolio_owner_name">Hello my name is <span class="first_name">Jim</span><span class="punctuation">.</span></h1>
+      <h1 id="portfolio_owner_name"><span>Hello</span> <span>my</span> <span>name</span> <span>is</span> <span class="first_name">Jim</span><span class="punctuation">.</span></h1>
     </header>
-    <nav>
-      <a href="/">About</a>
-      <a href="/">Work</a>
-      <a href="/">Publications</a>
-      <a href="/">Inquire</a>
+    <nav id="primary_navigation">
+      <a href="/" class="about primary_action">About</a>
+      <a href="/" class="work primary_action">Work</a>
+      <a href="/" class="publications primary_action">Publications</a>
+      <a href="/" class="inquiries primary_action">Inquiries</a>
     </nav>
-    <section id="about">
-      
+    <section class="about">
+      <p>If you're working on a web based project I can help you.</p>
     </section>
-    <section id="work">
+    <section class="primary_content">
       <%= yield :layout %>
     </section>
     <footer>
@@ -32,5 +33,30 @@
         <a href="/">About Us</a>
       </nav>
     </footer>
+    <% if ENV["RAILS_ENV"] == "development" %>
+    <ul id="grid">
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+       <li>&nbsp;</li>
+    </ul>
+    <script type="text/javascript" charset="utf-8" src="/javascripts/jquery-1-1.3.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="/javascripts/dev.js"></script>
+    <% end %>
   </body>
 </html>
