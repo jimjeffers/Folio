@@ -5,8 +5,7 @@
     <title><%= controller.controller_name %></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="/stylesheets/reset.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="/stylesheets/folio.css" type="text/css" media="screen" charset="utf-8">
+    <%= stylesheet_link_tag 'reset', 'folio', :cache => 'site' %>
     <script type="text/javascript" src="http://use.typekit.com/gni4okt.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="/javascripts/modernizr.js"></script>
