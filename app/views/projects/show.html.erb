@@ -10,7 +10,7 @@
 <% if !@project.assets.blank? %>
 <ul id="asset_list" class="item_list">
   <% for asset in @project.assets %>
-    <li class="asset" id="asset_<%= asset.id %>"><%= image_tag(asset.image.url(:thumbnail)) %></li>
+    <li class="asset" id="asset_<%= asset.id %>"><%= link_to image_tag(asset.image.url(:thumbnail)), [:edit,@project,asset] %></li>
   <% end %>
 </ul>
 <% else %>

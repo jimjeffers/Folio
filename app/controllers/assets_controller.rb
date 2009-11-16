@@ -8,4 +8,10 @@ class AssetsController < InheritedResources::Base
       success.html { redirect_to @project }
     end
   end
+  
+  def show
+    super do |format|
+      format.html { redirect_to @project }
+    end
+  end
 end

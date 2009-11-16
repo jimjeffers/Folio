@@ -1,3 +1,5 @@
+<%= link_to "&lt; Back to #{@project.name}...", @project %>
+<h1>Editing Details of: <%= @project.name %></h1>
 <% form_for @project do |f| -%>
   <ul class="form">
     <%= render :partial => 'project_form', :locals => {:f => f} %>

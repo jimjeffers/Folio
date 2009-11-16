@@ -1,3 +1,5 @@
+<%= link_to "&lt; Return to projects...", projects_path %>
+<h1>New Project</h1>
 <% form_for @project do |f| -%>
   <ul class="form">
     <%= render :partial => 'project_form', :locals => {:f => f} %>
