@@ -4760,3 +4760,662 @@ Rendering projects/new
   [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY position ASC, name ASC[0m
 Rendered projects/_project_form (12.0ms)
 Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/projects/new]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+  [4;36;1mProject Load Including Associations (0.0ms)[0m   [0;1mSQLite3::SQLException: ambiguous column name: position: SELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY position ASC, name ASC[0m
+  [4;36;1mAsset Load (0.8ms)[0m   [0;1mSELECT * FROM "assets" ORDER BY assets.position ASC, assets.name ASC[0m
+  [4;35;1mProject Load Including Associations (0.0ms)[0m   [0mSQLite3::SQLException: no such column: products.position: SELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY products.position ASC, products.name ASC[0m
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: products.position: SELECT * FROM "projects" ORDER BY products.position ASC, products.name ASC[0m
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'test') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'test') LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Test') LIMIT 1[0m
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:12:15) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-17 02:12:17) [GET]
+Rendering template within layouts/admin
+Rendering projects/new
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (11.5ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-11-17 02:12:20) [POST]
+  Parameters: {"commit"=>"Create Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "project"=>{"position"=>"", "name"=>"Test", "category_id"=>"", "description"=>""}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'test') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'test') LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Test') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering projects/new
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (78.4ms)
+Completed in 91ms (View: 81, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-11-17 02:12:24) [POST]
+  Parameters: {"commit"=>"Create Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "project"=>{"position"=>"3", "name"=>"Test", "category_id"=>"3", "description"=>""}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'test') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'test') LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Test') LIMIT 1[0m
+  [4;35;1mProject Create (0.3ms)[0m   [0mINSERT INTO "projects" ("name", "position", "completed_on", "created_at", "guid", "updated_at", "category_id", "description") VALUES('Test', 3, NULL, '2009-11-16 16:12:24', 'test', '2009-11-16 16:12:24', 3, '')[0m
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" WHERE ("categories"."id" = 3) ORDER BY categories.position ASC, categories.name ASC[0m
+  [4;35;1mCategory Update (0.1ms)[0m   [0mUPDATE "categories" SET "projects_count" = COALESCE("projects_count", 0) + 1 WHERE ("id" = 3) [0m
+Redirected to http://localhost:3000/projects/3
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:12:24) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.2ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/3]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mProject Load (1.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;36;1mProject Load Including Associations (0.9ms)[0m   [0;1mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:12:41) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:12:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.6ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:12:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/thumbnail/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:12:45) [GET]
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:12:46) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.2ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:12:47) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:12:48) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.2ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/3]
+
+
+Processing AssetsController#new (for 127.0.0.1 at 2009-11-17 02:12:49) [GET]
+  Parameters: {"project_id"=>"3"}
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering assets/new
+Rendered assets/_asset_form (2.6ms)
+Completed in 83ms (View: 8, DB: 0) | 200 OK [http://localhost/projects/3/assets/new]
+
+
+Processing AssetsController#create (for 127.0.0.1 at 2009-11-17 02:13:04) [POST]
+  Parameters: {"commit"=>"Create Asset", "project_id"=>"3", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "asset"=>{"position"=>"4", "name"=>"Test", "alt_text"=>"OK", "description"=>"Eh", "image"=>#<File:/var/folders/IA/IASfZgwLHxm1p39R6IlAZU+++TI/-Tmp-/RackMultipart20091117-54416-18u1e4w-0>}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets"."guid" = 'test') ORDER BY assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (0.1ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets"."guid" = 'test-1') ORDER BY assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.2ms)[0m   [0mSELECT "assets".id FROM "assets" WHERE ("assets"."guid" = 'test-1') LIMIT 1[0m
+  [4;36;1mAsset Create (0.3ms)[0m   [0;1mINSERT INTO "assets" ("name", "position", "image_file_name", "created_at", "image_file_size", "guid", "project_id", "updated_at", "image_content_type", "alt_text", "description", "image_updated_at") VALUES('Test', 4, 'grabthat.png', '2009-11-16 16:13:05', 157671, 'test-1', 3, '2009-11-16 16:13:05', 'image/png', 'OK', 'Eh', '2009-11-16 16:13:04')[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/4/screenshot/grabthat.png
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/4/preview/grabthat.png
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/4/thumbnail/grabthat.png
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/4/showcase/grabthat.png
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/4/original/grabthat.png
+Redirected to http://localhost:3000/projects/3
+Completed in 1073ms (DB: 1) | 302 Found [http://localhost/projects/3/assets]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:13:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.5ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/projects/3]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.7ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position DESC, projects.name DESC LIMIT 1[0m
+  [4;35;1mAsset Load (0.1ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 2) ORDER BY assets.position ASC, assets.name ASC[0m
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position DESC, projects.name DESC LIMIT 1[0m
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 2) ORDER BY assets.position ASC, assets.name ASC[0m
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.5ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:18:42) [GET]
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+  [4;36;1mAsset Load (0.2ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 2) ORDER BY assets.position ASC, assets.name ASC[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.url) on line #2 of app/views/site/work.html.erb:
+1: <section id="primary_screen">
+2:   <%= link_to image_tag(@featured.showcase_image.url(:preview), :height => 400, :width => 940), "/projects/main" %>
+3: </section>
+4: <section class="primary_content">
+5:   <ul class="portfolio">
+
+    app/views/site/work.html.erb:2
+
+Rendered rescues/_trace (36.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:19:27) [GET]
+  [4;35;1mProject Load Including Associations (0.9ms)[0m   [0mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 21ms (View: 7, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:19:30) [GET]
+
+ActionController::RoutingError (No route matches "/images/showcase/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:19:54) [GET]
+  Parameters: {"id"=>"main"}
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 0) ORDER BY projects.position ASC, projects.name ASC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Project with ID=main):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:41:in `resource'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:13:in `show'
+
+Rendered rescues/_trace (103.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:19:56) [GET]
+  [4;35;1mProject Load Including Associations (0.9ms)[0m   [0mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:19:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/showcase/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:20:49) [GET]
+  Parameters: {"id"=>"main"}
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 0) ORDER BY projects.position ASC, projects.name ASC[0m
+
+ActiveRecord::RecordNotFound (Couldn't find Project with ID=main):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:41:in `resource'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:13:in `show'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:20:50) [GET]
+  [4;35;1mProject Load Including Associations (1.0ms)[0m   [0mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 93ms (View: 6, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:20:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/showcase/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 02:21:16) [GET]
+  Parameters: {"guid"=>"rattlebox"}
+
+ActionController::UnknownAction (No action responded to spotlight. Actions: work):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:21:18) [GET]
+  [4;36;1mProject Load Including Associations (0.9ms)[0m   [0;1mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 20ms (View: 5, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:21:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/showcase/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:21:27) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:21:29) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.6ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 02:21:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/thumbnail/missing.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AssetsController#edit (for 127.0.0.1 at 2009-11-17 02:21:33) [GET]
+  Parameters: {"project_id"=>"1", "id"=>"1"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets"."id" = 1 AND ("assets".project_id = 1)) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/admin
+Rendering assets/edit
+Rendered assets/_asset_form (3.9ms)
+Completed in 17ms (View: 10, DB: 1) | 200 OK [http://localhost/projects/1/assets/1/edit]
+
+
+Processing AssetsController#update (for 127.0.0.1 at 2009-11-17 02:21:40) [PUT]
+  Parameters: {"commit"=>"Update Asset", "project_id"=>"1", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "id"=>"1", "asset"=>{"position"=>"", "name"=>"Photo", "alt_text"=>"this is some alt text", "description"=>"Ok", "image"=>#<File:/var/folders/IA/IASfZgwLHxm1p39R6IlAZU+++TI/-Tmp-/RackMultipart20091117-54416-102uebn-0>}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets"."id" = 1 AND ("assets".project_id = 1)) ORDER BY assets.position ASC, assets.name ASC[0m
+  [4;36;1mAsset Load (0.1ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets"."guid" = 'photo') ORDER BY assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.2ms)[0m   [0mSELECT "assets".id FROM "assets" WHERE ("assets"."guid" = 'photo' AND "assets".id <> 1) LIMIT 1[0m
+  [4;36;1mAsset Update (0.3ms)[0m   [0;1mUPDATE "assets" SET "updated_at" = '2009-11-16 16:21:42', "guid" = 'photo', "image_file_size" = 314710, "image_file_name" = 'selling.jpg', "image_content_type" = 'image/jpeg', "image_updated_at" = '2009-11-16 16:21:40' WHERE "id" = 1[0m
+[paperclip] Saving attachments.
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/1/screenshot/selling.jpg
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/1/preview/selling.jpg
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/1/thumbnail/selling.jpg
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/1/showcase/selling.jpg
+[paperclip] saving /Users/jim/Sites/PERSONAL/Folio/public/system/images/1/original/selling.jpg
+Redirected to http://localhost:3000/projects/1/assets/1
+Completed in 1687ms (DB: 0) | 302 Found [http://localhost/projects/1/assets/1]
+
+
+Processing AssetsController#show (for 127.0.0.1 at 2009-11-17 02:21:42) [GET]
+  Parameters: {"project_id"=>"1", "id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;36;1mAsset Load (0.3ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets"."id" = 1 AND ("assets".project_id = 1)) ORDER BY assets.position ASC, assets.name ASC[0m
+Redirected to http://localhost:3000/projects/1
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/projects/1/assets/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:21:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.7ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:21:45) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:22:01) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.4ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:22:04) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:22:07) [GET]
+  [4;35;1mProject Load Including Associations (0.9ms)[0m   [0mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:22:36) [GET]
+  [4;36;1mProject Load Including Associations (1.0ms)[0m   [0;1mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 21ms (View: 6, DB: 1) | 200 OK [http://localhost/work]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:24:27) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2009-11-17 02:24:29) [GET]
+  [4;36;1mCategory Load (0.6ms)[0m   [0;1mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendering template within layouts/admin
+Rendering categories/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://localhost/categories]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:24:29) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:24:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.7ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 87ms (View: 82, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2009-11-17 02:24:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/edit
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (15.1ms)
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2009-11-17 02:24:40) [PUT]
+  Parameters: {"commit"=>"Update Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "id"=>"1", "project"=>{"position"=>"2", "name"=>"Rattlebox", "completed_on(1i)"=>"2008", "category_id"=>"1", "completed_on(2i)"=>"11", "completed_on(3i)"=>"15", "description"=>"Created a lot of cool stuff for rattlebox.com website."}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebox') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebox-1') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'rattlebox-1' AND "projects".id <> 1) LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Rattlebox' AND "projects".id <> 1) LIMIT 1[0m
+  [4;35;1mProject Update (0.3ms)[0m   [0mUPDATE "projects" SET "updated_at" = '2009-11-16 16:24:40', "guid" = 'rattlebox-1', "completed_on" = '2008-11-15' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/projects/1
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:24:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.6ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:24:46) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-17 02:24:53) [GET]
+Rendering template within layouts/admin
+Rendering projects/new
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (15.3ms)
+Completed in 22ms (View: 18, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-11-17 02:24:59) [POST]
+  Parameters: {"commit"=>"Create Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "project"=>{"position"=>"", "name"=>"", "completed_on(1i)"=>"2009", "category_id"=>"", "completed_on(2i)"=>"12", "completed_on(3i)"=>"16", "description"=>""}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = '') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = '') LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = '') LIMIT 1[0m
+Rendering template within layouts/admin
+Rendering projects/new
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (14.1ms)
+Completed in 27ms (View: 16, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:28:19) [GET]
+  [4;36;1mProject Load Including Associations (0.9ms)[0m   [0;1mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.strftime) on line #11 of app/views/site/work.html.erb:
+8:         <li class="project" id="project_<%= project.id %>">
+9:           <%= link_to image_tag(project.showcase_image.url(:showcase), :height => 140, :width => 220), spotlight_path(project.guid) %>
+10:           <h3 class="project_name"><%= link_to project.name, spotlight_path(project.guid) %></h4>
+11:           <h4><%= project.completed_on.strftime("%Y") %></h4>
+12:         </li>
+13:       <% end %>
+14:     <% end %>
+
+    app/views/site/work.html.erb:11
+    app/views/site/work.html.erb:7
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:28:30) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.6ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2009-11-17 02:28:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/edit
+  [4;35;1mCategory Load (0.5ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (14.4ms)
+Completed in 98ms (View: 19, DB: 1) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2009-11-17 02:28:37) [PUT]
+  Parameters: {"commit"=>"Update Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "id"=>"1", "project"=>{"position"=>"2", "name"=>"Rattlebox", "completed_on(1i)"=>"2008", "category_id"=>"1", "completed_on(2i)"=>"11", "completed_on(3i)"=>"15", "description"=>"Created a lot of cool stuff for rattlebox.com website."}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebox') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'rattlebox' AND "projects".id <> 1) LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Rattlebox' AND "projects".id <> 1) LIMIT 1[0m
+  [4;36;1mProject Update (0.3ms)[0m   [0;1mUPDATE "projects" SET "updated_at" = '2009-11-16 16:28:37', "guid" = 'rattlebox' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/projects/1
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/projects/1]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:37) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.6ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 18ms (View: 14, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2009-11-17 02:28:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/edit
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (13.5ms)
+Completed in 23ms (View: 18, DB: 1) | 200 OK [http://localhost/projects/1/edit]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 1) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.6ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 20ms (View: 15, DB: 1) | 200 OK [http://localhost/projects/1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:28:39) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 8ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:41) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.4ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2009-11-17 02:28:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/edit
+  [4;35;1mCategory Load (0.4ms)[0m   [0mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (12.9ms)
+Completed in 22ms (View: 18, DB: 1) | 200 OK [http://localhost/projects/3/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2009-11-17 02:28:44) [PUT]
+  Parameters: {"commit"=>"Update Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "id"=>"3", "project"=>{"position"=>"3", "name"=>"Test", "completed_on(1i)"=>"2009", "category_id"=>"3", "completed_on(2i)"=>"11", "completed_on(3i)"=>"16", "description"=>""}}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'test') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'test-1') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'test-1' AND "projects".id <> 3) LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Test' AND "projects".id <> 3) LIMIT 1[0m
+  [4;35;1mProject Update (0.3ms)[0m   [0mUPDATE "projects" SET "updated_at" = '2009-11-16 16:28:44', "guid" = 'test-1', "completed_on" = '2009-11-16' WHERE "id" = 3[0m
+Redirected to http://localhost:3000/projects/3
+Completed in 17ms (DB: 0) | 302 Found [http://localhost/projects/3]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:44) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 3) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.5ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://localhost/projects/3]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-17 02:28:46) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/index
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;36;1mAsset Load (0.2ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 2) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/2]
+
+
+Processing ProjectsController#edit (for 127.0.0.1 at 2009-11-17 02:28:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/edit
+  [4;36;1mCategory Load (0.5ms)[0m   [0;1mSELECT * FROM "categories" ORDER BY categories.position ASC, categories.name ASC[0m
+Rendered projects/_project_form (78.6ms)
+Completed in 87ms (View: 83, DB: 1) | 200 OK [http://localhost/projects/2/edit]
+
+
+Processing ProjectsController#update (for 127.0.0.1 at 2009-11-17 02:28:54) [PUT]
+  Parameters: {"commit"=>"Update Project", "authenticity_token"=>"eVj8bzwX+J0SQKrzIfEHGIiursz3mOks2fe8379O91k=", "id"=>"2", "project"=>{"position"=>"9", "name"=>"Someone", "completed_on(1i)"=>"2007", "category_id"=>"1", "completed_on(2i)"=>"11", "completed_on(3i)"=>"16", "description"=>"Ok cool"}}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."id" = 2) ORDER BY projects.position ASC, projects.name ASC[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'someone') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mProject Load (0.1ms)[0m   [0mSELECT "projects".id FROM "projects" WHERE ("projects"."guid" = 'someone' AND "projects".id <> 2) LIMIT 1[0m
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT "projects".id FROM "projects" WHERE ("projects"."name" = 'Someone' AND "projects".id <> 2) LIMIT 1[0m
+  [4;35;1mProject Update (0.6ms)[0m   [0mUPDATE "projects" SET "updated_at" = '2009-11-16 16:28:54', "guid" = 'someone', "completed_on" = '2007-11-16' WHERE "id" = 2[0m
+Redirected to http://localhost:3000/projects/2
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/projects/2]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-11-17 02:28:54) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."id" = 2) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/admin
+Rendering projects/show
+  [4;35;1mAsset Load (0.2ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 2) ORDER BY assets.position ASC, assets.name ASC[0m
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects/2]
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 02:29:13) [GET]
+  [4;36;1mProject Load Including Associations (1.0ms)[0m   [0;1mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+Completed in 20ms (View: 6, DB: 1) | 200 OK [http://localhost/work]

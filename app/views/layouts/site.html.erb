@@ -20,12 +20,7 @@
       <a href="/" class="about primary_action">About</a>
       <a href="/" class="inquiries primary_action">Inquiries</a>
     </nav>
-    <section id="primary_screen">
-      <%= link_to image_tag("showcase.png", :height => 400, :width => 940), "/projects/main" %>
-    </section>
-    <section class="primary_content">
-      <%= yield :layout %>
-    </section>
+    <%= yield :layout %>
     <footer class="tk-apertura">
       All content and images &copy; 2003-<%= Time.now.strftime("%Y") %> by Jim Jeffers, unless otherwise noted.
     </footer>

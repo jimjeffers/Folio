@@ -12,14 +12,25 @@ class Project < ActiveRecord::Base
   validates_presence_of :category_id
   
   # Scopes
-  default_scope :order => "position ASC, name ASC"
+  default_scope :order => "projects.position ASC, projects.name ASC"
+  named_scope :with_assets, :conditions => "assets.project_id=projects.id", :include => :assets
   
   # Returns first item and remaining array separately
   def self.first_with_remainder
-    projects = self.all
+    projects = self.with_assets
     unless projects.nil?
-      first = projects.pop
+      first = projects.shift
       [first,projects]
     end
+  end
+  
+  # Returns the first asset for the project if it exists.
+  def first_asset
+    assets.first unless assets.blank?
+  end
+  
+  # Showcase image
+  def showcase_image
+    first_asset.image unless first_asset.nil?
   end
 end

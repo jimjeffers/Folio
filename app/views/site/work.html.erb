@@ -1,11 +1,16 @@
-<ul class="portfolio">
-  <% if !10.times.blank? %>
-    <% for one in 10.times %>
-      <li class="project" id="project_<%= one %>">
-        <%= link_to image_tag("thumbnail.png", :height => 140, :width => 220), "/projects/#{one}" %>
-        <h3 class="project_name"><%= link_to "Project #{one}", "/projects/#{one}" %></h4>
-        <h4><%= Time.now.strftime("%Y") %></h4>
-      </li>
+<section id="primary_screen">
+  <%= link_to image_tag(@featured.showcase_image.url(:preview), :height => 400, :width => 940), "/projects/main" %>
+</section>
+<section class="primary_content">
+  <ul class="portfolio">
+    <% if !@projects.blank? %>
+      <% for project in @projects %>
+        <li class="project" id="project_<%= project.id %>">
+          <%= link_to image_tag(project.showcase_image.url(:showcase), :height => 140, :width => 220), spotlight_path(project.guid) %>
+          <h3 class="project_name"><%= link_to project.name, spotlight_path(project.guid) %></h4>
+          <h4><%= project.completed_on.strftime("%Y") %></h4>
+        </li>
+      <% end %>
     <% end %>
-  <% end %>
-</ul>
+  </ul>
+</section>

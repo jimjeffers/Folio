@@ -10,5 +10,5 @@ class Category < ActiveRecord::Base
   validates_presence_of :name
   
   # Scopes
-  default_scope :order => "position ASC, name ASC"
+  default_scope :order => "categories.position ASC, categories.name ASC"
 end
