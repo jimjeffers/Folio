@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title><%= controller.controller_name %> >> <%= controller.action_name %></title>
+    <%= stylesheet_link_tag 'reset', :cache => :admin_styles %>
+    <%= stylesheet_link_tag 'admin', :cache => :admin_styles %>
+  </head>
+  <body id="<%= controller.controller_name %>_<%= controller.action_name %>" class="<%= controller.controller_name %>">
+    <nav>
+      <%= link_to "Categories", categories_path %>
+      <%= link_to "Projects", projects_path %>
+    </nav>
+    <section id="content">
+      <%= yield :layout %>
+    </section>
+  </body>
+</html>

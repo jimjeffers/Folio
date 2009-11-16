@@ -1,4 +1,4 @@
 class ProjectsController < InheritedResources::Base
-  layout 'site'
+  layout 'admin'
   respond_to :html, :xml, :json
 end

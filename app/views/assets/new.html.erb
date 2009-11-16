@@ -1,0 +1,10 @@
+<h1>Creating Asset</h1>
+<h2><%= link_to "&lt; Return to #{@project.name}", @project %></h2>
+<% form_for [@project,@asset], :html => {:multipart => true} do |f| -%>
+  <ul class="form">
+    <%= render :partial => 'asset_form', :locals => {:f => f} %>
+    <li>
+      <%= f.submit "Create Asset" %>
+    </li>
+  </ul>
+<% end -%>

@@ -25,17 +25,6 @@
       <%= link_to image_tag("showcase.png", :height => 400, :width => 940), "/projects/main" %>
     </section>
     <section class="primary_content">
-      <ul class="portfolio">
-        <% if !10.times.blank? %>
-          <% for one in 10.times %>
-            <li class="project" id="project_<%= one %>">
-              <%= link_to image_tag("thumbnail.png", :height => 140, :width => 220), "/projects/#{one}" %>
-              <h3 class="project_name"><%= link_to "Project #{one}", "/projects/#{one}" %></h4>
-              <h4><%= Time.now.strftime("%Y") %></h4>
-            </li>
-          <% end %>
-        <% end %>
-      </ul>
       <%= yield :layout %>
     </section>
     <footer class="tk-apertura">

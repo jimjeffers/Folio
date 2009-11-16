@@ -1,0 +1,11 @@
+<h1>Listing Projects</h1>
+<h2><%= link_to 'New Project', new_project_path %></h2>
+<% if !@projects.blank? %>
+  <ul>
+    <% for project in @projects %>
+      <li><%= project.name %> <%= link_to 'edit', project_path(project), :class => 'edit' %> <span class="drag">drag</span></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>Oops no projects exist. <%= link_to 'Create one..', new_project_path %></p>
+<% end %>

@@ -1,0 +1,18 @@
+<%= link_to "&lt; Back to all project...", projects_path %>
+<h1><%= @project.name %> <%= link_to 'edit details', edit_project_path(@project), :class => 'edit' %></h1>
+<h2><%= @project.completed_on %></h2>
+
+<h3>Description</h3>
+<%= html(@project.description) %>
+
+<h3>Assets</h3>
+<h4><%= link_to 'New Asset', new_project_asset_path(@project) %></h4>
+<% if !@project.assets.blank? %>
+<ul id="asset_list" class="item_list">
+  <% for asset in @project.assets %>
+    <li class="asset" id="asset_<%= asset.id %>"><%= image_tag(asset.image.url(:thumbnail)) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>No assets yet for this project! <%= link_to 'Create one now?', new_project_asset_path(@project) %></p>  
+<% end %>
