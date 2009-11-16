@@ -13,25 +13,33 @@
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
     <header>
-      <h1 id="portfolio_owner_name"><span>Hello</span> <span>my</span> <span>name</span> <span>is</span> <span class="first_name">Jim</span><span class="punctuation">.</span></h1>
+      <h1><span>I</span> <span>build</span> <span>web</span> <span>sites</span><span class="punctuation">.</span></h1>
+      <h2 id="site_title"><span class="owner_name">Jim Jeffers</span> <span class="owner_title">Interaction Designer &amp; Developer</span></h2>
     </header>
     <nav id="primary_navigation">
-      <a href="/" class="about primary_action">About</a>
       <a href="/" class="work primary_action">Work</a>
-      <a href="/" class="publications primary_action">Publications</a>
+      <a href="/" class="about primary_action">About</a>
       <a href="/" class="inquiries primary_action">Inquiries</a>
     </nav>
-    <section class="about">
-      <p>If you're working on a web based project I can help you.</p>
+    <section id="primary_screen">
+      <%= link_to image_tag("showcase.png", :height => 400, :width => 940), "/projects/main" %>
     </section>
     <section class="primary_content">
+      <ul class="portfolio">
+        <% if !10.times.blank? %>
+          <% for one in 10.times %>
+            <li class="project" id="project_<%= one %>">
+              <%= link_to image_tag("thumbnail.png", :height => 140, :width => 220), "/projects/#{one}" %>
+              <h3 class="project_name"><%= link_to "Project #{one}", "/projects/#{one}" %></h4>
+              <h4><%= Time.now.strftime("%Y") %></h4>
+            </li>
+          <% end %>
+        <% end %>
+      </ul>
       <%= yield :layout %>
     </section>
-    <footer>
-      <nav>
-        <h2>About</h2>
-        <a href="/">About Us</a>
-      </nav>
+    <footer class="tk-apertura">
+      All content and images &copy; 2003-<%= Time.now.strftime("%Y") %> by Jim Jeffers, unless otherwise noted.
     </footer>
     <% if ENV["RAILS_ENV"] == "development" %>
     <ul id="grid">

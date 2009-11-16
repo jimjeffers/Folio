@@ -1,6 +1,6 @@
 class Category < ActiveRecord::Base
   # Relationships
-  has_many :projects, :counter_cache => true
+  has_many :projects
   
   # Validations
   validates_uniqueness_of :name

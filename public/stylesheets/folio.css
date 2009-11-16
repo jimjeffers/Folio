@@ -37,12 +37,96 @@ General comments/License Statement if any.
    .punctuation {
       color: #0072bc;
    }
+   
+   img {
+      display: block;
+   }
+
+/* =PORTFOLIO
+   ------------------------------------------------------ */
+   ul.portfolio {
+      padding: 40px 0;
+   }
+   
+   ul.portfolio li {
+      float: left;
+      display: block;
+      margin: 10px 20px 20px 0;
+   }
+   
+   ul.portfolio li img {
+      box-shadow: 0 0 10px rgba(0,0,0,.15);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,.15);
+        -icab-box-shadow: 0 0 10px rgba(0,0,0,.15);
+        -khtml-box-shadow: 0 0 10px rgba(0,0,0,.15);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.15);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.15);
+   }
+   
+   ul.portfolio li:hover img {
+      box-shadow: 0 0 10px rgba(0,0,0,.25);
+        -o-box-shadow: 0 0 10px rgba(0,0,0,.25);
+        -icab-box-shadow: 0 0 10px rgba(0,0,0,.25);
+        -khtml-box-shadow: 0 0 10px rgba(0,0,0,.25);
+        -moz-box-shadow: 0 0 10px rgba(0,0,0,.25);
+        -webkit-box-shadow: 0 0 10px rgba(0,0,0,.25);
+      transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+      
+   }
+   
+   ul.portfolio li:nth-child(4n) {
+      margin-right: 0;
+   }
+   
+   ul.portfolio h4 {
+      color: #ccc;
+      font-size: 0.75em;
+      line-height: 1em;
+   }
+   
+   ul.portfolio h3 {
+      font-size: 0.875em;
+      line-height: 1.5em;
+      margin: 0.5em 0 0 0;
+      
+   }
+   
+   ul.portfolio h3 a {
+      color: #0072bc;
+      text-decoration: none;
+   }
 
 /* =HEADINGS
    ------------------------------------------------------ */
    h1 {
       font-size: 5em;
       line-height: 1em;
+      margin: 0.5em 0;
+   }
+
+/* =SITE_TITLE
+   ------------------------------------------------------ */
+   #site_title {
+      color: #666;
+      font-size: 0.875em;
+      font-weight: 100;
+      left: 50%;
+      line-height: 1.5em;
+      margin-left: -480px;
+      position: absolute;
+      text-shadow: -1px -1px 0 rgba(255,255,255,.75);
+      top: 20px;
+   }
+   
+   #site_title .owner_name {
+      font-weight: 600;
+   }
+   
+   #site_title .owner_title {
+      color: #ccc;
+      text-shadow: -1px -1px 0 rgba(255,255,255,.95);
    }
 
 /* =NAVIGATION
@@ -53,13 +137,51 @@ General comments/License Statement if any.
       right: 50%;
       top: 20px;
    }
+
+/* =PRIMARY_SCREEN
+   ------------------------------------------------------ */
+   section#primary_screen {
+      background: #fff;
+      box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -o-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -icab-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -khtml-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+      display: block;
+      height: 400px;
+      width: 940px;
+   }
+
+/* =FOOTER
+   ------------------------------------------------------ */
+   footer {
+      border-top: 1px solid rgba(0,0,0,0.25);
+      clear: both;
+      color: #999;
+      display: block;
+      font-size: 0.875em;
+      line-height: 1.5em;
+      padding: 1em 0;
+      margin: 1em 0;
+   }
    
 /* =DECORATIVE
    ------------------------------------------------------ */
    .primary_action {
       border: 1px solid #fff;
       border-radius: 5px;
+        -o-border-radius:5px;
+        -icab-border-radius:5px;
+        -khtml-border-radius:5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
       box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+        -o-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+        -icab-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+        -khtml-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+        -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+        -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
       color: #999;
       display: inline-block;
       font: normal normal 300 1em/1em Arial, sans-serif;
@@ -68,29 +190,16 @@ General comments/License Statement if any.
       text-decoration: none;
       text-shadow: -1px -1px 1px rgba(255,255,255,0.5);
       text-transform: lowercase;
-      
-      -o-border-radius:5px;
-      -icab-border-radius:5px;
-      -khtml-border-radius:5px;
-      -moz-border-radius:5px;
-      -webkit-border-radius:5px;
-      
-      -o-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-      -icab-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-      -khtml-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-      -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
-      -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.1);
    }
    
    .primary_action:hover {
       box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        -o-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        -icab-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        -khtml-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+        -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
       color: #000;
-      
-      -o-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
-      -icab-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
-      -khtml-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
-      -moz-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
-      -webkit-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
    }
 
 /* =PROGRESSIVE ENHANCEMENT (rgba)
@@ -113,7 +222,11 @@ General comments/License Statement if any.
    ------------------------------------------------------ */
    .csstransitions h1,
    .csstransitions .primary_action,
-   .csstransitions h1 span {
+   .csstransitions h1 span,
+   .csstransitions section#primary_screen,
+   .portfolio li,
+   ul.portfolio li img,
+   #site_title span {
       -webkit-transition: all 0.25s ease-out;
    }
 
@@ -124,43 +237,56 @@ General comments/License Statement if any.
    }
    
    .csstransforms span:nth-child(1),
-   .csstransforms nav a:nth-child(1) {
+   .csstransforms nav a:nth-child(1),
+   .csstransforms .portfolio li:nth-child(1n) {
       transform: rotate(5deg) translate(-.5em,-0.5em);
-      -moz-transform: rotate(5deg) translate(-.5em,-.5em);
-      -webkit-transform: rotate(5deg) translate(-.5em,-.5em);
+       -moz-transform: rotate(5deg) translate(-.5em,-.5em);
+       -webkit-transform: rotate(5deg) translate(-.5em,-.5em);
    }
    
    .csstransforms span:nth-child(2),
-   .csstransforms nav a:nth-child(2) {
+   .csstransforms nav a:nth-child(2),
+   .csstransforms .portfolio li:nth-child(2n) {
       transform: rotate(-130deg) translate(.5em,.5em);
-      -moz-transform: rotate(-130deg) translate(.5em,.5em);
-      -webkit-transform: rotate(-130deg) translate(.5em,.5em);
+       -moz-transform: rotate(-130deg) translate(.5em,.5em);
+       -webkit-transform: rotate(-130deg) translate(.5em,.5em);
    }
    
    .csstransforms span:nth-child(3),
-   .csstransforms nav a:nth-child(3) {
+   .csstransforms nav a:nth-child(3),
+   .csstransforms .portfolio li:nth-child(3n) {
       transform: rotate(-20deg) translate(-.5em,.5em);
       -moz-transform: rotate(-20deg) translate(-.5em,.5em);
       -webkit-transform: rotate(-20deg) translate(-.5em,.5em);
    }
    
    .csstransforms span:nth-child(4),
-   .csstransforms nav a:nth-child(4) {
+   .csstransforms nav a:nth-child(4),
+   .csstransforms .portfolio li:nth-child(4n) {
       transform: rotate(200deg) translate(.5em,.5em);
       -moz-transform: rotate(200deg) translate(.5em,.5em);
       -webkit-transform: rotate(200deg) translate(.5em,.5em);
    }
    
-   .csstransforms span:nth-child(5) {
+   .csstransforms span:nth-child(5),
+   .csstransforms .portfolio li:nth-child(5n) {
       transform: rotate(80deg) translate(.5em,.5em);
       -moz-transform: rotate(80deg) translate(.5em,.5em);
       -webkit-transform: rotate(80deg) translate(.5em,.5em);
    }
    
-   .csstransforms span:nth-child(6) {
+   .csstransforms span:nth-child(6),
+   .csstransforms .portfolio li:nth-child(6n) {
       transform: rotate(80deg) translate(.5em,.5em);
       -moz-transform: rotate(80deg) translate(.5em,.5em);
       -webkit-transform: rotate(80deg) translate(.5em,.5em);
+   }
+   
+   .csstransforms section#primary_screen {
+      transform: rotate(-45deg) translate(-10em,10em) scale(0.5);
+        -moz-transform: rotate(-45deg) translate(-10em,10em) scale(0.5);
+        -webkit-transform: rotate(-45deg) translate(-10em,10em) scale(0.5);
+      
    }
    
    .csstransforms:hover span:nth-child(1),
@@ -174,11 +300,22 @@ General comments/License Statement if any.
    .csstransforms:hover nav a:nth-child(3),
    .csstransforms:hover nav a:nth-child(4),
    .csstransforms:hover nav a:nth-child(5),
-   .csstransforms:hover nav a:nth-child(6) {
+   .csstransforms:hover nav a:nth-child(6),
+   .csstransforms:hover .portfolio li:nth-child(1n),
+   .csstransforms:hover .portfolio li:nth-child(2n),
+   .csstransforms:hover .portfolio li:nth-child(3n),
+   .csstransforms:hover .portfolio li:nth-child(4n),
+   .csstransforms:hover .portfolio li:nth-child(5n),
+   .csstransforms:hover .portfolio li:nth-child(6n),
+   .csstransforms:hover section#primary_screen {
       display: inline-block;
       transform: rotate(0deg) translate(0,0);
       -moz-transform: rotate(0deg) translate(0,0);
       -webkit-transform: rotate(0deg) translate(0,0);
+   }
+   
+   .csstransforms:hover section#primary_screen {
+      display: block;
    }
    
 /* =GRID_TO_BE_DELETED_FOR_PRODUCTION

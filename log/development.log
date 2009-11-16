@@ -1244,3 +1244,1331 @@ Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 00:43:22) [GET]
 Rendering template within layouts/site
 Rendering projects/index
 Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 01:01:16) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 01:01:32) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 09:49:26) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 09:54:29) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 18:22:02) [GET]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 91ms (View: 87, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 18:22:27) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-07 18:24:13) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-08 18:33:47) [GET]
+  [4;36;1mProject Load (19.8ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 110ms (View: 88, DB: 20) | 200 OK [http://localhost/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-12 14:56:47) [GET]
+
+ActionController::RoutingError (No route matches "/items" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 14:56:51) [GET]
+  [4;36;1mProject Load (27.0ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 206ms (View: 177, DB: 27) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 14:57:12) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-12 14:58:02) [GET]
+
+ActionController::RoutingError (No route matches "/products" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 14:58:05) [GET]
+  [4;36;1mProject Load (16.7ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 174ms (View: 155, DB: 17) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 14:58:20) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 14:58:42) [GET]
+  [4;36;1mProject Load (1.4ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 5ms (View: 1, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-12 15:01:31) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-15 13:46:54) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 154ms (View: 151, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-15 13:49:43) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" [0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20091105135202)
+Migrating to CreateCategories (20091105135511)
+Migrating to CreateBrands (20091107091947)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (17.8ms)[0m   [0mCREATE TABLE "brands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091107091947')[0m
+Migrating to CreateAssets (20091116080842)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image_file_name" varchar(255), "image_content_type" varchar(255), "image_file_size" integer, "image_updated_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091116080842')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("assets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("brands")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("projects")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (34.6ms)[0m   [0;1mDROP TABLE "brands"[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091107091947'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("assets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (3.0ms)[0m   [0;1mDROP TABLE "assets"[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20091116080842'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("projects")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 18:28:14) [GET]
+
+ArgumentError (The :dependent option expects either :destroy, :delete_all, or :nullify ("destroy")):
+  (eval):3:in `has_many'
+  app/models/project.rb:4
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:305:in `initialize_resources_class_accessors!'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:333:in `send'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:333:in `inherited'
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (98.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20091105135202)
+Migrating to CreateCategories (20091105135511)
+Migrating to CreateAssets (20091116080842)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "alt_text" varchar(255), "description" text, "image_file_name" varchar(255), "image_content_type" varchar(255), "image_file_size" integer, "image_updated_at" datetime, "project_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091116080842')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("assets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 18:28:34) [GET]
+
+ArgumentError (The :dependent option expects either :destroy, :delete_all, or :nullify ("destroy")):
+  (eval):3:in `has_many'
+  app/models/project.rb:4
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:305:in `initialize_resources_class_accessors!'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:333:in `send'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/class_methods.rb:333:in `inherited'
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (37.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:28:55) [GET]
+
+NoMethodError (undefined method `%' for {:order=>"position ASC, name ASC"}:Hash):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:23:in `collection'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (108.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:29:22) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: position: SELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: position: SELECT * FROM "projects"  ORDER BY position ASC, name ASC):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:23:in `collection'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20091105135202)
+Migrating to CreateCategories (20091105135511)
+Migrating to CreateAssets (20091116080842)
+Migrating to AddPositionToProjectImageAndCategory (20091116082944)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (12.9ms)[0m   [0mALTER TABLE "projects" ADD "position" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "categories" ADD "position" integer[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "assets" ADD "position" integer[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091116082944')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("assets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:33:37) [GET]
+  [4;35;1mProject Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: name: SELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT * FROM "projects"  ORDER BY position ASC, name ASC):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:23:in `collection'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (111.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:33:38) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: name: SELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT * FROM "projects"  ORDER BY position ASC, name ASC):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:23:in `collection'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (37.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:34:00) [GET]
+  [4;36;1mProject Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: name: SELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT * FROM "projects"  ORDER BY position ASC, name ASC):
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/base_helpers.rb:23:in `collection'
+  /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (36.7ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20091105135202)
+Migrating to CreateCategories (20091105135511)
+Migrating to CreateAssets (20091116080842)
+Migrating to AddPositionToProjectImageAndCategory (20091116082944)
+Migrating to ChangeProjectTitleToName (20091116083444)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TEMPORARY TABLE "altered_projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "category_id_id" integer, "completed_on" date, "created_at" datetime, "updated_at" datetime, "position" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "projects"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "category_id_id" integer, "completed_on" date, "created_at" datetime, "updated_at" datetime, "position" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_projects")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mDROP TABLE "altered_projects"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091116083444')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("assets")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("categories")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("projects")[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:53:56) [GET]
+  [4;35;1mProject Load (1.1ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 401ms (View: 329, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 18:54:13) [GET]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 19ms (View: 1, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:24:30) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:24:45) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:36:15) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:36:59) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:37:51) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:38:11) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:39:47) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:40:56) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 65ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:41:13) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:42:00) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:42:27) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:42:29) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:42:38) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:43:09) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 19:43:27) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:01:38) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:03:30) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:03:41) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:03:56) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:04:20) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:04:38) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:22:41) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 4ms (View: 1, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:25:03) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:26:06) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:28:04) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+
+ActionView::TemplateError (undefined method `each' for 10:Fixnum) on line #29 of app/views/layouts/site.html.erb:
+26:     <section class="primary_content">
+27:       <ul class="portfolio">
+28:         <% if !10.blank? %>
+29:           <% for one in 10 %>
+30:             
+31:           <% end %>
+32:         <% end %>
+
+    app/views/layouts/site.html.erb:29
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:107:in `retrieve_response_from_mimes'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:113:in `to_html'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `send'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:65:in `respond_with'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:7:in `index'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:28:15) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:31:04) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 40ms (View: 37, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:32:19) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:32:46) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:33:08) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:33:16) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:34:59) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:37:30) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:38:55) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:39:46) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:40:08) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:40:38) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:44:06) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:44:25) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 21:49:36) [GET]
+
+ActionController::RoutingError (No route matches "/products" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:49:38) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:55:49) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:56:12) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:57:36) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 21:59:11) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:00:16) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:01:17) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:01:23) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:01:33) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:01:39) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:01:54) [GET]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:02:08) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:03:11) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:04:55) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:06:51) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:07:09) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:07:21) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:07:52) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:08:05) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:08:29) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:08:53) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:09:18) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:10:00) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:10:28) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:11:05) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:11:34) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:12:32) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:14:22) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:22:34) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:23:17) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:26:23) [GET]
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 11, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:26:25) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:27:00) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:27:03) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:27:31) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:28:45) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:29:20) [GET]
+  [4;36;1mProject Load (1.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 13ms (View: 6, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:29:43) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:02) [GET]
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:14) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:22) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:38) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:48) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:32:56) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:33:07) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:33:15) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:33:26) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:34:01) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:34:08) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:34:24) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:36:21) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:36:45) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:37:10) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:38:28) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:40:04) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:40:48) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:40:51) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:42:58) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:44:58) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:45:18) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:45:30) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:45:58) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:46:20) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:47:51) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:48:28) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:48:41) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:50:35) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:50:41) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:51:03) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:51:48) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:52:58) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:53:10) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:53:18) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:54:07) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:54:19) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-11-16 22:55:38) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" ORDER BY position ASC, name ASC[0m
+Rendering template within layouts/site
+Rendering projects/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/projects]
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT "categories".id FROM "categories" WHERE ("categories"."name" = 'Applications') LIMIT 1[0m
+  [4;35;1mCategory Create (0.3ms)[0m   [0mINSERT INTO "categories" ("name", "position", "created_at", "projects_count", "updated_at") VALUES('Applications', NULL, '2009-11-16 13:19:30', NULL, '2009-11-16 13:19:30')[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-16 23:19:44) [GET]
+Rendering template within layouts/site
+Rendering projects/new
+
+ActionView::TemplateError (undefined method `projects_path' for #<ActionView::Base:0x103189698>) on line #1 of app/views/projects/new.html.erb:
+1: <% form_for @project do |f| -%>
+2:   <ul class="form">
+3:     <li>
+4:       <%= f.label :name, "Name" %>
+
+    app/views/projects/new.html.erb:1
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:107:in `retrieve_response_from_mimes'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:113:in `to_html'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `send'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:65:in `respond_with'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:19:in `new'
+
+Rendered rescues/_trace (41.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-16 23:20:17) [GET]
+Rendering template within layouts/site
+Rendering projects/new
+  [4;36;1mCategory Load (0.4ms)[0m   [0;1mSELECT * FROM "categories" [0m
+
+ActionView::TemplateError (undefined method `category_id' for #<Project:0x1030d70d8>) on line #13 of app/views/projects/new.html.erb:
+10:     </li>
+11:     <li>
+12:       <%= f.label :category_id, "Category" %>
+13:       <%= f.collection_select(:category_id, Category.all, :id, :name, {:prompt => true}) %>
+14:     </li>
+15:   </ul>
+16: <% end -%>
+
+    app/views/projects/new.html.erb:13
+    app/views/projects/new.html.erb:1
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:107:in `retrieve_response_from_mimes'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:163:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:113:in `to_html'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `send'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/responder.rb:106:in `call'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/legacy/respond_to.rb:65:in `respond_with'
+    /Library/Ruby/Gems/1.8/gems/inherited_resources-0.9.2/lib/inherited_resources/actions.rb:19:in `new'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (30.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProjects (20091105135202)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "description" text, "completed_on" date, "category_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105135202')[0m
+Migrating to CreateCategories (20091105135511)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "categories" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "projects_count" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091105135511')[0m
+Migrating to CreateAssets (20091116080842)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "assets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "alt_text" varchar(255), "description" text, "image_file_name" varchar(255), "image_content_type" varchar(255), "image_file_size" integer, "image_updated_at" datetime, "project_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091116080842')[0m
+Migrating to AddPositionToProjectImageAndCategory (20091116082944)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mALTER TABLE "projects" ADD "position" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mALTER TABLE "categories" ADD "position" integer[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mALTER TABLE "assets" ADD "position" integer[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091116082944')[0m
+Migrating to ChangeProjectTitleToName (20091116083444)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "completed_on" date, "category_id" integer, "created_at" datetime, "updated_at" datetime, "position" integer) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("projects")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "projects"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" text, "completed_on" date, "category_id" integer, "created_at" datetime, "updated_at" datetime, "position" integer) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("altered_projects")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "altered_projects"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20091116083444')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("assets")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("categories")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("projects")[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-16 23:21:25) [GET]
+Rendering template within layouts/site
+Rendering projects/new
+  [4;35;1mCategory Load (0.1ms)[0m   [0mSELECT * FROM "categories" [0m
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-11-16 23:21:27) [GET]
+Rendering template within layouts/site
+Rendering projects/new
+  [4;36;1mCategory Load (0.2ms)[0m   [0;1mSELECT * FROM "categories" [0m
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/projects/new]
