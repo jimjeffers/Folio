@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091116150011) do
+ActiveRecord::Schema.define(:version => 20091117010155) do
 
   create_table "assets", :force => true do |t|
     t.string   "name"
@@ -44,6 +44,8 @@ ActiveRecord::Schema.define(:version => 20091116150011) do
     t.datetime "updated_at"
     t.integer  "position"
     t.string   "guid"
+    t.string   "credits"
+    t.string   "client"
   end
 
 end
