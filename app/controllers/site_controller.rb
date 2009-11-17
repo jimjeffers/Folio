@@ -11,6 +11,8 @@ class SiteController < ApplicationController
   def spotlight
     @project = Project.find_by_guid(params[:guid])
     @main_heading = spanitize(@project.name)
+    @assets = @project.assets
+    @assets.shift
   end
   
   protected

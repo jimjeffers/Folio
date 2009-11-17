@@ -1,3 +1,14 @@
-<h2><%= spanitize(@project.credits) %></h2>
-
-<%= RedCloth.new(@project.description).to_html %>
+<section id="primary_screen">
+  <%= image_tag(@project.showcase_image.url(:preview), :height => 400, :width => 940, :alt => @project.first_asset.alt_text) %>
+</section>
+<%= html(@project.description) %>
+<% if !@assets.blank? %>
+  <% for asset in @assets %>
+    <section class="project_piece">
+      <%= image_tag asset.image.url(:screenshot) %>
+      <%= html(asset.description) %>
+    </section>
+  <% end %>
+<% else %>
+  
+<% end %>

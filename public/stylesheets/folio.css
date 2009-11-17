@@ -132,7 +132,7 @@ General comments/License Statement if any.
 /* =NAVIGATION
    ------------------------------------------------------ */
    nav#primary_navigation {
-      margin-right: -400px;
+      margin-right: -460px;
       position: absolute;
       right: 50%;
       top: 20px;
@@ -163,7 +163,8 @@ General comments/License Statement if any.
       font-size: 0.875em;
       line-height: 1.5em;
       padding: 1em 0;
-      margin: 1em 0;
+      margin: 1em 20px 1em 0;
+      width: 940px;
    }
    
 /* =DECORATIVE
@@ -224,9 +225,11 @@ General comments/License Statement if any.
    .csstransitions .primary_action,
    .csstransitions h1 span,
    .csstransitions section#primary_screen,
-   .portfolio li,
-   ul.portfolio li img,
-   #site_title span {
+   .csstransitions .portfolio li,
+   .csstransitions ul.portfolio li img,
+   .csstransitions #site_title span,
+   .csstransitions section.project_piece:nth-child(1n) img,
+   .csstransitions footer {
       -webkit-transition: all 0.25s ease-out;
    }
 
@@ -238,7 +241,8 @@ General comments/License Statement if any.
    
    .csstransforms span:nth-child(1),
    .csstransforms nav a:nth-child(1),
-   .csstransforms .portfolio li:nth-child(1n) {
+   .csstransforms .portfolio li:nth-child(1n),
+   .csstransforms section.project_piece:nth-child(1n) img {
       transform: rotate(5deg) translate(-.5em,-0.5em);
        -moz-transform: rotate(5deg) translate(-.5em,-.5em);
        -webkit-transform: rotate(5deg) translate(-.5em,-.5em);
@@ -246,7 +250,9 @@ General comments/License Statement if any.
    
    .csstransforms span:nth-child(2),
    .csstransforms nav a:nth-child(2),
-   .csstransforms .portfolio li:nth-child(2n) {
+   .csstransforms .portfolio li:nth-child(2n),
+   .csstransforms section.project_piece:nth-child(2n) img,
+   .csstransforms footer {
       transform: rotate(-130deg) translate(.5em,.5em);
        -moz-transform: rotate(-130deg) translate(.5em,.5em);
        -webkit-transform: rotate(-130deg) translate(.5em,.5em);
@@ -307,7 +313,10 @@ General comments/License Statement if any.
    .csstransforms:hover .portfolio li:nth-child(4n),
    .csstransforms:hover .portfolio li:nth-child(5n),
    .csstransforms:hover .portfolio li:nth-child(6n),
-   .csstransforms:hover section#primary_screen {
+   .csstransforms:hover section#primary_screen,
+   .csstransforms:hover footer,
+   .csstransforms:hover section.project_piece:nth-child(2n) img,
+   .csstransforms:hover section.project_piece:nth-child(1n) img {
       display: inline-block;
       transform: rotate(0deg) translate(0,0);
       -moz-transform: rotate(0deg) translate(0,0);
