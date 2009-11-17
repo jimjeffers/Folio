@@ -41,6 +41,10 @@ General comments/License Statement if any.
    img {
       display: block;
    }
+   
+   a {
+      color: #0072bc;
+   }
 
 /* =PORTFOLIO
    ------------------------------------------------------ */

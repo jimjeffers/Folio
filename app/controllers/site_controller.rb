@@ -15,6 +15,15 @@ class SiteController < ApplicationController
     @assets.shift
   end
   
+  # Displays about me page.
+  def about
+    @main_heading='<span>Hello</span> <span>my</span> <span>name</span> <span>is</span> <span>Jim</span><span class="punctuation">.</span>'
+  end
+  
+  def inquire
+    @main_heading='<span>Hire</span> <span>me</span><span class="punctuation">!</span>'
+  end
+  
   protected
   # Wraps content words in individual spans.
   def spanitize(content)
