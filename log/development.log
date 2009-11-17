@@ -7477,3 +7477,136 @@ Rendering site/spotlight
   [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
   [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
 Completed in 24ms (View: 8, DB: 1) | 200 OK [http://localhost/work/test-1]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 13:52:15) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (16.5ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;35;1mAsset Load (0.4ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 76ms (View: 31, DB: 18) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 13:54:30) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.8ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;36;1mAsset Load (0.3ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 26ms (View: 10, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#work (for 127.0.0.1 at 2009-11-17 13:55:48) [GET]
+  [4;35;1mProject Load Including Associations (1.5ms)[0m   [0mSELECT "projects"."id" AS t0_r0, "projects"."name" AS t0_r1, "projects"."description" AS t0_r2, "projects"."completed_on" AS t0_r3, "projects"."category_id" AS t0_r4, "projects"."created_at" AS t0_r5, "projects"."updated_at" AS t0_r6, "projects"."position" AS t0_r7, "projects"."guid" AS t0_r8, "projects"."credits" AS t0_r9, "projects"."client" AS t0_r10, "assets"."id" AS t1_r0, "assets"."name" AS t1_r1, "assets"."alt_text" AS t1_r2, "assets"."description" AS t1_r3, "assets"."image_file_name" AS t1_r4, "assets"."image_content_type" AS t1_r5, "assets"."image_file_size" AS t1_r6, "assets"."image_updated_at" AS t1_r7, "assets"."project_id" AS t1_r8, "assets"."created_at" AS t1_r9, "assets"."updated_at" AS t1_r10, "assets"."position" AS t1_r11, "assets"."guid" AS t1_r12 FROM "projects" LEFT OUTER JOIN "assets" ON assets.project_id = projects.id WHERE (assets.project_id=projects.id) ORDER BY projects.position ASC, projects.name ASC[0m
+Rendering template within layouts/site
+Rendering site/work
+  [4;36;1mAsset Load (0.4ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.4ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 3) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 88ms (View: 9, DB: 2) | 200 OK [http://localhost/work]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 13:55:57) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.7ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;36;1mAsset Load (0.3ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:42:20) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (0.7ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 24ms (View: 10, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:42:35) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.7ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;36;1mAsset Load (0.3ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 26ms (View: 10, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:43:23) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (0.8ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;35;1mAsset Load (0.3ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:46:22) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (0.8ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;36;1mAsset Load (0.4ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 107ms (View: 12, DB: 2) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:46:40) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (0.7ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;35;1mAsset Load (0.4ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 30ms (View: 13, DB: 1) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:48:28) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;35;1mAsset Load (1.7ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;36;1mAsset Load (0.5ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 107ms (View: 88, DB: 3) | 200 OK [http://localhost/work/rattlebo]
+
+
+Processing SiteController#spotlight (for 127.0.0.1 at 2009-11-17 14:50:04) [GET]
+  Parameters: {"guid"=>"rattlebo"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM "projects" WHERE ("projects"."guid" = 'rattlebo') ORDER BY projects.position ASC, projects.name ASC LIMIT 1[0m
+  [4;36;1mAsset Load (0.8ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY assets.position ASC, assets.name ASC[0m
+Rendering template within layouts/site
+Rendering site/spotlight
+  [4;35;1mAsset Load (0.5ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "assets" WHERE ("assets".project_id = 1) ORDER BY position ASC, assets.position ASC, assets.name ASC LIMIT 1[0m
+Completed in 51ms (View: 33, DB: 2) | 200 OK [http://localhost/work/rattlebo]

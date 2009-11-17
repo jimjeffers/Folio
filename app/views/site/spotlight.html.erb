@@ -6,7 +6,12 @@
   <% for asset in @assets %>
     <section class="project_piece">
       <%= image_tag asset.image.url(:screenshot) %>
+      <% unless asset.name.blank? %>
+      <h3><%= asset.name %></h3>
+      <% end %>
+      <% unless asset.description.blank? %>
       <%= html(asset.description) %>
+      <% end %>
     </section>
   <% end %>
 <% else %>

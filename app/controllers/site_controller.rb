@@ -10,7 +10,7 @@ class SiteController < ApplicationController
   # Showcases a specific project.
   def spotlight
     @project = Project.find_by_guid(params[:guid])
-    @main_heading = spanitize(@project.name)
+    @main_heading = spanitize(@project.name)+" <span class=\"punctuation\">#{@project.completed_on.strftime("%Y")}</span>"
     @assets = @project.assets
     @assets.shift
   end

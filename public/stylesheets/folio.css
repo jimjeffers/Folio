@@ -152,6 +152,36 @@ General comments/License Statement if any.
       height: 400px;
       width: 940px;
    }
+   
+/* =CONTENT
+   ------------------------------------------------------ */
+   section.project_piece img {
+      box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -o-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -icab-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -khtml-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -moz-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+        -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,.15);
+       margin: 10px 0;
+   }
+   
+   section.project_piece {
+      display: block;
+      margin: 20px 0;
+   }
+   
+   section.project_piece p,
+   section.project_piece ul,
+   section.project_piece ol {
+      margin: 0.5em 0;
+      width: 520px;
+   }
+   
+   section.project_piece ul,
+   section.project_piece ol {
+      margin-right: 60px;
+      width: 460px;
+   }
 
 /* =FOOTER
    ------------------------------------------------------ */
