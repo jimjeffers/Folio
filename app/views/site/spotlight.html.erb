@@ -1,0 +1,3 @@
+<h2><%= spanitize(@project.credits) %></h2>
+
+<%= RedCloth.new(@project.description).to_html %>

@@ -1,12 +1,12 @@
 <section id="primary_screen">
-  <%= link_to image_tag(@featured.showcase_image.url(:preview), :height => 400, :width => 940), "/projects/main" %>
+  <%= link_to image_tag(@featured.showcase_image.url(:preview), :height => 400, :width => 940, :alt => @featured.first_asset.alt_text), spotlight_path(@featured.guid) %>
 </section>
 <section class="primary_content">
   <ul class="portfolio">
     <% if !@projects.blank? %>
       <% for project in @projects %>
         <li class="project" id="project_<%= project.id %>">
-          <%= link_to image_tag(project.showcase_image.url(:showcase), :height => 140, :width => 220), spotlight_path(project.guid) %>
+          <%= link_to image_tag(project.showcase_image.url(:showcase), :height => 140, :width => 220, :alt => project.first_asset.alt_text), spotlight_path(project.guid) %>
           <h3 class="project_name"><%= link_to project.name, spotlight_path(project.guid) %></h4>
           <h4><%= project.completed_on.strftime("%Y") %></h4>
         </li>

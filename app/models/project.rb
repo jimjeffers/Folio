@@ -26,7 +26,7 @@ class Project < ActiveRecord::Base
   
   # Returns the first asset for the project if it exists.
   def first_asset
-    assets.first unless assets.blank?
+    assets.find(:first, :order => "position ASC") unless assets.blank?
   end
   
   # Showcase image

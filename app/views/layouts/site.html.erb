@@ -12,13 +12,13 @@
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
     <header>
-      <h1><span>I</span> <span>build</span> <span>web</span> <span>sites</span><span class="punctuation">.</span></h1>
+      <h1><%= @main_heading %></h1>
       <h2 id="site_title"><span class="owner_name">Jim Jeffers</span> <span class="owner_title">Interaction Designer &amp; Developer</span></h2>
     </header>
     <nav id="primary_navigation">
-      <a href="/" class="work primary_action">Work</a>
-      <a href="/" class="about primary_action">About</a>
-      <a href="/" class="inquiries primary_action">Inquiries</a>
+      <a href="/work" class="work primary_action">Work</a>
+      <a href="/about" class="about primary_action">About</a>
+      <a href="/inquire" class="inquiries primary_action">Inquiries</a>
     </nav>
     <%= yield :layout %>
     <footer class="tk-apertura">
