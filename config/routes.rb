@@ -17,7 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   map.spotlight '/work/:guid', :controller => 'site', :action => 'spotlight'
   map.work '/work', :controller => 'site', :action => 'work'
   map.about '/about', :controller => 'site', :action => 'about'
-  map.inquire '/inquire', :controller => 'site', :action => 'work'
+  map.inquire '/inquire', :controller => 'site', :action => 'inquire'
   
   # Defaults
   map.connect ':controller/:action/:id'
