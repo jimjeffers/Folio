@@ -1,9 +1,9 @@
 <h1>Listing Projects</h1>
 <h2><%= link_to 'New Project', new_project_path %></h2>
 <% if !@projects.blank? %>
-  <ul>
+  <ul id="projects" class="sorted_list">
     <% for project in @projects %>
-      <li><%= project.name %> <%= link_to 'edit', project_path(project), :class => 'edit' %> <span class="drag">drag</span></li>
+      <li id="project_<%= project.id %>" class="project"><%= project.name %> <%= link_to 'edit', project_path(project), :class => 'edit' %> <span class="drag">drag</span></li>
     <% end %>
   </ul>
 <% else %>

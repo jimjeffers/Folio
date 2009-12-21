@@ -329,36 +329,32 @@ General comments/License Statement if any.
       
    }
    
-   .csstransforms:hover span:nth-child(1),
-   .csstransforms:hover span:nth-child(2),
-   .csstransforms:hover span:nth-child(3),
-   .csstransforms:hover span:nth-child(4),
-   .csstransforms:hover span:nth-child(5),
-   .csstransforms:hover span:nth-child(6),
-   .csstransforms:hover nav a:nth-child(1),
-   .csstransforms:hover nav a:nth-child(2),
-   .csstransforms:hover nav a:nth-child(3),
-   .csstransforms:hover nav a:nth-child(4),
-   .csstransforms:hover nav a:nth-child(5),
-   .csstransforms:hover nav a:nth-child(6),
-   .csstransforms:hover .portfolio li:nth-child(1n),
-   .csstransforms:hover .portfolio li:nth-child(2n),
-   .csstransforms:hover .portfolio li:nth-child(3n),
-   .csstransforms:hover .portfolio li:nth-child(4n),
-   .csstransforms:hover .portfolio li:nth-child(5n),
-   .csstransforms:hover .portfolio li:nth-child(6n),
-   .csstransforms:hover section#primary_screen,
-   .csstransforms:hover footer,
-   .csstransforms:hover section.project_piece:nth-child(2n) img,
-   .csstransforms:hover section.project_piece:nth-child(1n) img {
+   .csstransforms span:nth-child(1),
+   .csstransforms span:nth-child(2),
+   .csstransforms span:nth-child(3),
+   .csstransforms span:nth-child(4),
+   .csstransforms span:nth-child(5),
+   .csstransforms span:nth-child(6),
+   .csstransforms nav a:nth-child(1),
+   .csstransforms nav a:nth-child(2),
+   .csstransforms nav a:nth-child(3),
+   .csstransforms nav a:nth-child(4),
+   .csstransforms nav a:nth-child(5),
+   .csstransforms nav a:nth-child(6),
+   .csstransforms .portfolio li:nth-child(1n),
+   .csstransforms .portfolio li:nth-child(2n),
+   .csstransforms .portfolio li:nth-child(3n),
+   .csstransforms .portfolio li:nth-child(4n),
+   .csstransforms .portfolio li:nth-child(5n),
+   .csstransforms .portfolio li:nth-child(6n),
+   .csstransforms section#primary_screen,
+   .csstransforms footer,
+   .csstransforms section.project_piece:nth-child(2n) img,
+   .csstransforms section.project_piece:nth-child(1n) img {
       display: inline-block;
       transform: rotate(0deg) translate(0,0);
       -moz-transform: rotate(0deg) translate(0,0);
       -webkit-transform: rotate(0deg) translate(0,0);
-   }
-   
-   .csstransforms:hover section#primary_screen {
-      display: block;
    }
    
 /* =GRID_TO_BE_DELETED_FOR_PRODUCTION

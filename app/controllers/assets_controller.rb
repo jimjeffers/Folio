@@ -15,4 +15,13 @@ class AssetsController < InheritedResources::Base
       format.html { redirect_to @project }
     end
   end
+  
+  def sort
+    if params[:asset]
+      params[:asset].each_with_index do |id,index|
+        Asset.find(id).update_attribute(:position,index)
+      end
+    end
+    render :text => 'Order successfully updated!'
+  end
 end

@@ -8,8 +8,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
   # Resources
-  map.resources :projects do |project|
-    project.resources :assets
+  map.resources :projects, :member => {:sort => :post} do |project|
+    project.resources :assets, :member => {:sort => :post}
   end
   map.resources :categories
   

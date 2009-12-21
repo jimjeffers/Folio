@@ -30,6 +30,12 @@
       color: #0072bc;
    }
    
+   h3 {
+      border-top: 1px dotted #ddd;
+      margin: 1em 0 0.25em 0;
+      padding: 0.5em 0;
+   }
+   
 /* =NAVIGATION
    ------------------------------------------------------ */
    nav {
@@ -51,4 +57,40 @@
    section#content {
       display: block;
       padding: 1em;
+   }
+
+/* =ASSET_LIST
+   ------------------------------------------------------ */
+   #assets li {
+      padding: 0 0 0 120px;
+      position: relative;
+      min-height: 100px;
+   }
+   
+   #assets img {
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+   }
+
+/* =FORMS
+   ------------------------------------------------------ */
+   
+   label {
+      display: block;
+      padding: 0.15em;
+   }
+   
+   input[type="text"],
+   textarea {
+      border: 1px solid #ddd;
+      display: block;
+      padding: 0.5em;
+   }
+   
+   ul.form li {
+      border-top: 1px dotted #ddd;
+      padding: 0.5em;
+      margin: 0.5em 0;
    }

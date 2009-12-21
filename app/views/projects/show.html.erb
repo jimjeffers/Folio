@@ -8,9 +8,13 @@
 <h3>Assets</h3>
 <h4><%= link_to 'New Asset', new_project_asset_path(@project) %></h4>
 <% if !@project.assets.blank? %>
-<ul id="asset_list" class="item_list">
+<ul id="assets" class="item_list sorted_list">
   <% for asset in @project.assets %>
-    <li class="asset" id="asset_<%= asset.id %>"><%= link_to image_tag(asset.image.url(:thumbnail)), [:edit,@project,asset] %></li>
+    <li class="asset" id="asset_<%= asset.id %>">
+      <h5><%= asset.name %></h5>
+      <p><%= asset.description[0..144] %> <%= link_to 'edit', [:edit,@project,asset] %></p>
+      <%= link_to image_tag(asset.image.url(:thumbnail)), [:edit,@project,asset] %>
+    </li>
   <% end %>
 </ul>
 <% else %>

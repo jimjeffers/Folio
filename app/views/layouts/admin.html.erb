@@ -4,6 +4,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <title><%= controller.controller_name %> >> <%= controller.action_name %></title>
     <%= stylesheet_link_tag 'reset','admin', :cache => 'admin_styles' %>
+    <%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
   </head>
   <body id="<%= controller.controller_name %>_<%= controller.action_name %>" class="<%= controller.controller_name %>">
     <nav>
@@ -13,5 +14,6 @@
     <section id="content">
       <%= yield :layout %>
     </section>
+    <%= javascript_include_tag 'jquery-1-1.3.2.min.js', 'jquery-ui-1.7.2.custom.min.js', 'admin.js', :cache => 'admin_tools' %>
   </body>
 </html>
