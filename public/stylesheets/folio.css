@@ -227,7 +227,10 @@ General comments/License Statement if any.
       text-transform: lowercase;
    }
    
-   .primary_action:hover {
+   .primary_action:hover,
+   .site_work .work,
+   .site_about .about,
+   .site_inquire .inquire {
       box-shadow: 1px 1px 4px rgba(0,0,0,.5);
         -o-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
         -icab-box-shadow: 1px 1px 4px rgba(0,0,0,.5);
