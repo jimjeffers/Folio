@@ -229,6 +229,7 @@ General comments/License Statement if any.
    
    .primary_action:hover,
    .site_work .work,
+   .site_spotlight .work,
    .site_about .about,
    .site_inquire .inquire {
       box-shadow: 1px 1px 4px rgba(0,0,0,.5);
