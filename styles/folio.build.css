@@ -75,6 +75,8 @@ table {
    ------------------------------------------------------ */
    body {
       background: #fff;
+      color: #000;
+      font: normal normal normal 1em/1.5em Arial, sans-serif;
    }
    
    .cssgradients body {
@@ -85,6 +87,23 @@ table {
    ------------------------------------------------------ */
    nav {
       background: rgba(255,255,255,0.15);
+   }
+   
+   nav ul {
+      margin: 0 auto;
+      overflow: hidden;
+      width: 960px;
+   }
+   
+   nav li {
+      float: right;
+   }
+   
+   nav li a {
+      color: #000;
+      font-size: 0.75em;
+      line-height: 1.5em;
+      padding: 10px 10px 10px 30px;
    }
    
    h1 {

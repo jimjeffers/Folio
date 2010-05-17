@@ -25,6 +25,8 @@
    ------------------------------------------------------ */
    body {
       background: #fff;
+      color: #000;
+      font: normal normal normal 1em/1.5em Arial, sans-serif;
    }
    
    .cssgradients body {
@@ -34,7 +36,40 @@
 /* =NAV
    ------------------------------------------------------ */
    nav {
-      background: rgba(255,255,255,0.15);
+      background: rgba(255,255,255,0.25);
+      display: block;
+   }
+   
+   nav ul {
+      margin: 0 auto;
+      overflow: hidden;
+      width: 960px;
+   }
+   
+   nav li {
+      float: right;
+      margin-left: 20px;
+   }
+   
+   nav li a {
+      color: #000;
+      display: block;
+      font-size: 0.675em;
+      line-height: 1.5em;
+      padding: 10px 10px 15px 40px;
+   }
+   
+   nav li:hover {
+      background: rgba(0,0,0,0.05);
+   }
+   
+   nav li.project a {
+      background: url(../images/icon_folio.png) no-repeat 10px 8px;
+   }
+   
+   nav li.download a {
+      background: url(../images/icon_download.png) no-repeat 10px 12px;
+      padding-left: 30px;
    }
    
    h1 {
