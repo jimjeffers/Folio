@@ -1,0 +1,52 @@
+<% content_for :headers do %>
+<%= javascript_include_tag 'jquery.jcrop.min' %>
+<%= stylesheet_link_tag 'jquery.jcrop' %>
+<script language="Javascript">
+
+function showPreview(coords)
+{
+  var rx = <%= Asset::IMAGE_SCW %> / coords.w;
+  var ry = <%= Asset::IMAGE_SCH %> / coords.h;
+  var ratio = <%= @asset.image_geometry(:original).width %> / <%= @asset.image_geometry(:screenshot).width %>; 
+
+  $('#preview').css({
+    width: Math.round(rx * <%= @asset.image_geometry(:screenshot).width.to_i %>) + 'px',
+    height: Math.round(ry * <%= @asset.image_geometry(:screenshot).height.to_i %>) + 'px',
+    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+    marginTop: '-' + Math.round(ry * coords.y) + 'px'
+  });
+  $('#crop_x').val(Math.round(coords.x * ratio));
+  $('#crop_y').val(Math.round(coords.y * ratio));
+  $('#crop_w').val(Math.round(coords.w * ratio));
+  $('#crop_h').val(Math.round(coords.h * ratio));
+}
+
+$(function() {
+  $(document).ready(function(){
+    $('#cropbox').Jcrop({
+        onSelect: showPreview,
+        onChange: showPreview,
+        setSelect:   [ 0, 0, 240, 240 ],
+        aspectRatio: <%= Asset::IMAGE_SCW %>/<%= Asset::IMAGE_SCH %>,
+        minSize: [<%= Asset::IMAGE_SCW %>,<%= Asset::IMAGE_SCH %>]
+      });
+  });
+});
+
+</script>
+<% end %>
+
+<p>
+  <b>Showcase:</b>
+  <%= image_tag @asset.image.url(:screenshot), :id => 'cropbox' %>
+<div style="width:<%= Asset::IMAGE_SCW %>px;height:<%= Asset::IMAGE_SCH %>px;overflow:hidden">
+  <%= image_tag @asset.image.url(:screenshot), :id => 'preview' %>
+</div>
+</p>
+<% form_for [@project,@asset] do |f| %>
+  <%= f.text_field :crop_x, :id => 'crop_x' %><br />
+  <%= f.text_field :crop_y, :id => 'crop_y' %><br />
+  <%= f.text_field :crop_w, :id => 'crop_w' %><br />
+  <%= f.text_field :crop_h, :id => 'crop_h' %><br />
+  <%= f.submit "Crop!" %>
+<% end %>
