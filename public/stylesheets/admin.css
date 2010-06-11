@@ -21,13 +21,13 @@
 /* =BODY
    ------------------------------------------------------ */
    body {
-      background: #fff;
+      background: #dddddd;
       color: #000;
       font: 100% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
    }
    
    a {
-      color: #0072bc;
+      color: #0066ec;
    }
    
    h3 {
@@ -39,17 +39,115 @@
 /* =NAVIGATION
    ------------------------------------------------------ */
    nav {
-      background: #000;
+      background: rgba(255,255,255,0.25);
       display: block;
-      padding: 1em;
       line-height: 1.5em;
    }
    
    nav a {
-      color: #fff;
+      color: #000;
       display: inline-block;
-      padding: 5px;
+      padding: 2px 5px;
       font-weight: bold;
+      text-decoration: none;
+   }
+   
+   nav > ul {
+      margin-left: 10px;
+   }
+   
+   nav > ul > li {
+      background: rgba(255,255,255,0);
+      display: inline-block;
+      padding: 4px 2px 2px 2px;
+      position: relative;
+   }
+   
+   nav > ul > li.active {
+      background: rgba(255,255,255,1);
+   }
+   
+   nav > ul > li > .sub_navigation {
+      background: #fff;
+      font-size: 0.75em;
+   }
+
+   nav > ul > li.active,
+   .sub_navigation {
+      box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        -o-box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        -icab-box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        -khtml-box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        -moz-box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+        -webkit-box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+   }
+   
+   .sub_navigation {
+      left: 0;
+      line-height: 1.25em;
+      position: absolute;
+      top: 100%;
+      width: 180px;
+   }
+   
+   .sub_navigation > li {
+      padding: 1px 6px;
+      position: relative;
+   }
+   
+   .sub_navigation > li > .sub_navigation {
+      background: #0066ec;
+      border-left: 2px solid #0260dc;
+      left: 100%;
+      top: 2px;
+   }
+   
+   .sub_navigation > li > .sub_navigation li:hover {
+      background: #0260dc;
+   }
+   
+   .sub_navigation .drag {
+      cursor: move;
+      display: block;
+      right: 4px;
+      position: absolute;
+      top: 3px;
+   }
+   
+   .sub_navigation li:hover,
+   .sub_navigation li.active {
+      background: #0066ec;
+   }
+   
+   .sub_navigation li:hover a,
+   .sub_navigation li.active a {
+      color: #fff;
+   }
+   
+   .sub_navigation li.new:hover {
+      background: #fff;
+   }
+   
+   .sub_navigation .new {
+      border-top: 1px solid rgba(0,0,0,.05);
+      padding-bottom: 6px;
+      padding-top: 6px;
+   }
+   
+   .sub_navigation .new a {
+      background: #0066ec;
+      color: #fff;
+      border-radius:4px;
+        -o-border-radius:4px;
+        -icab-border-radius:4px;
+        -khtml-border-radius:4px;
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        -moz-border-radius:4px;
+   }
+   
+   .sub_navigation .new a:hover {
+      background: #0260dc;
    }
    
 /* =CONTENT
