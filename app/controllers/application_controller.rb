@@ -8,4 +8,10 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  protected
+  # Retrieves all categories with their included projects.
+  def get_categories
+    @categories = Category.all(:include => :projects, :order => "categories.position ASC, projects.position ASC")
+  end
 end

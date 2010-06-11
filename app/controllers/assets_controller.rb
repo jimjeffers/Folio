@@ -3,11 +3,13 @@ class AssetsController < InheritedResources::Base
   respond_to :html, :xml, :json
   belongs_to :project
   before_filter :login_required
+  before_filter :get_categories
+  
   actions :all, :except => [ :create, :update]
   
   def create
     @project = Project.find(params[:project_id])
-    @asset = User.new(params[:asset])
+    @asset = Asset.new(params[:asset])
     if @asset.save
       flash[:notice] = 'Asset was successfully created.'
       if params[:asset][:image].blank?

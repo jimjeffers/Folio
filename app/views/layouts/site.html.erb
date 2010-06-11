@@ -8,7 +8,6 @@
     <%= stylesheet_link_tag 'reset', 'folio', :cache => 'site' %>
     <script type="text/javascript" src="http://use.typekit.com/gni4okt.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script type="text/javascript" src="/javascripts/modernizr.js"></script>
   </head>
   <body id="<%= @page_id || controller.controller_name %>" class="<%= @page_class || "#{controller.controller_name}_#{controller.action_name}" %>">
     <header>
@@ -46,7 +45,8 @@
        <li>&nbsp;</li>
        <li>&nbsp;</li>
     </ul>
-    <script type="text/javascript" charset="utf-8" src="/javascripts/dev.js"></script>
+    <%= javascript_include_tag "dev/grid", :cache => "dev" %>
     <% end %>
+    <%= javascript_include_tag "utils/modernizr", "jquery/jquery-1.4.2.min", :cache => "utils" %>
   </body>
 </html>
