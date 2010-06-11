@@ -7,7 +7,6 @@ $(document).ready(function() {
          var current = $(event.target);
          $.post('/'+current.attr('id')+'/sort', current.sortable('serialize'),
             function(data) {
-               alert(data);
                list.css("opacity",1);
             },
          "text");
